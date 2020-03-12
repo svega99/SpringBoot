@@ -26,7 +26,11 @@ public class ServicesImpl implements Services{
     public List<Usuario> getAllUsers() {
         return userRepo.findAll(); 
     }
-
+    
+    @Override
+    public Usuario getUserbyID(int id){
+        return userRepo.findById(id).get();
+    }
     
 
     

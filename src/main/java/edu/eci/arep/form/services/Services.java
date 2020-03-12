@@ -17,6 +17,8 @@ import java.util.List;
 public interface Services {
     
     public List<Usuario> getAllUsers();
+    
+    public Usuario getUserbyID(int id);
 
     
     
